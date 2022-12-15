@@ -1,27 +1,66 @@
 .hero {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-color: #2F303A; */
-    text-align: center;
-    &__title {
-    color: var(--secondary-text-color);
+    // max-width: 1600px;
+    // margin: 0 auto;
+    // padding: 200px 0;
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // /* background-color: #2F303A; */
+    // text-align: center;
+    // &__title {
+    // color: var(--secondary-text-color);
     
+    //     margin: 0 auto;
+    //     margin-bottom: 30px;
+    //     max-width: 695px;
+    
+    //     font-weight: 900;
+    //     font-size: 44px;
+    //     line-height: 1.36;
+    //     letter-spacing: 0.06em;
+    //     text-transform: uppercase;
+    // }
+        height: 400px;
+        width: 100%;
         margin: 0 auto;
-        margin-bottom: 30px;
-        max-width: 695px;
-    
+        padding: 118px 60px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagees/hero-bg-mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+
+        @media screen and (min-width: 768px) {
+        padding: 118px 204px;
+        width: 768px;
+        }
+
+        @media screen and (min-width: 1200px) {
+        height: 600px;
+        padding: 200px 450px;
+        width: 1600px;
+        
+        }
+    }                
+
+
+
+        &__title {
+        color: var(--secondary-text-color);
+        padding-bottom: 30px;
+              
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    }
 
-    
+        @media screen and (min-width: 1200px) {
+        font-size: 44px;
+            }
+        }
 
 }
 
@@ -55,5 +94,5 @@
     border-color: var(--primery-bg-color);
     cursor: pointer;
     }
-
+ 
 }

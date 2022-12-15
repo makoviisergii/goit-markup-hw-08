@@ -1,7 +1,14 @@
 @import './base/reset';
+@import './utilits/mixin';
+@import './components/common';
+@import './components/section';
+@import './layouts/burger-menu';
+@import './components/container';
+@import './components/logo';
+@import './components/section-title';
+@import './components/soc';
 @import './utilits/vars';
 @import './utilits/hide';
-@import './components/common';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/about';
