@@ -1,98 +1,115 @@
 .hero {
-    // max-width: 1600px;
-    // margin: 0 auto;
-    // padding: 200px 0;
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // /* background-color: #2F303A; */
-    // text-align: center;
-    // &__title {
-    // color: var(--secondary-text-color);
-    
-    //     margin: 0 auto;
-    //     margin-bottom: 30px;
-    //     max-width: 695px;
-    
-    //     font-weight: 900;
-    //     font-size: 44px;
-    //     line-height: 1.36;
-    //     letter-spacing: 0.06em;
-    //     text-transform: uppercase;
-    // }
-        height: 400px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 118px 60px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagees/hero-bg-mob.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        text-align: center;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 118px 60px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-mob.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-mob-2x.jpg);
+  }
 
-        @media screen and (min-width: 480px) {
-            width: 480px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
 
-        @media screen and (min-width: 768px) {
-        padding: 118px 204px;
-        width: 768px;
-        }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-        @media screen and (min-width: 1200px) {
-        height: 600px;
-        padding: 200px 450px;
-        width: 1600px;
-        
-        }
-    }                
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-tab.jpg);
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-tab-2x.jpg);
+    }
+  }
 
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding: 200px 450px;
+    width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-tab-2x.jpg);
+    }
+  }
 
-        &__title {
-        color: var(--secondary-text-color);
-        padding-bottom: 30px;
-              
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+  &__title {
+    color: var(--secondary-text-color);
+    padding-bottom: 30px;
 
-        @media screen and (min-width: 1200px) {
-        font-size: 44px;
-            }
-        }
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
+  }
 }
 
 /*hero button */
 
 .button {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 
-    color: var(--secondary-text-color);
-    background-color: var(--accent-text-color);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
 
-    border-radius: 4px;
-    padding: 10px 32px;
+  border-color: var(--accent-text-color);
 
-    border-color: var(--accent-text-color);
+  transition-property: color, fill, background-color, border-color;
+  transition: var(--timing-function);
 
-    transition-property: color, fill, background-color, border-color;
-    transition: var(--timing-function);
-
-    &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var(--title-text-color);
     background-color: var(--primery-bg-color);
     border-color: var(--primery-bg-color);
     cursor: pointer;
-    }
- 
+  }
 }

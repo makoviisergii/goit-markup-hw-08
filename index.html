@@ -34,8 +34,18 @@
             </li>
           </ul>
         </nav>
-
-
+         <button
+          class="menu-toggle js-open-menu nav__burger"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="16">
+            <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+                </svg>
+          </svg>
+        </button>
 
         <ul class="contacts list">
           <li class="contacts__item">
@@ -125,19 +135,31 @@
           <ul class="wedo list">
             <li class="wedo__item">
               <div class="wedo__box">
-                <img src="./images/box1.jpg" alt="програмуемо" width="370" />
+                <img 
+                srcset="
+              ./images/job/photo1.jpg  1x,
+              ./images/job/photo1-2x.jpg 2x"
+                src="./images/job/photo1.jpg" alt="програмуемо" width="370" />
                 <h3 class="wedo__imag-title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="wedo__item">
               <div class="wedo__box">
-                <img src="./images/box2.jpg" alt="адаптуемо" width="370" />
+                <img                 
+                srcset="
+              ./images/job/photo2.jpg  1x,
+              ./images/job/photo2-2x.jpg 2x"
+                src="./images/job/photo2.jpg"  alt="адаптуемо" width="370" />
                 <h3 class="wedo__imag-title">Мобільні додатк</h3>
               </div>
             </li>
             <li class="wedo__item">
               <div class="wedo__box">
-                <img src="./images/box3.jpg" alt="розробляемо дізайн" width="370" />
+                <img                 
+                srcset="
+              ./images/job/photo3.jpg  1x,
+              ./images/job/photo3-2x.jpg 2x"
+                src="./images/job/photo3.jpg"  alt="розробляемо дізайн" width="370" />
                 <h3 class="wedo__imag-title">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -151,7 +173,31 @@
           <ul class="team__list list">
             <li class="team__item">
               <div class="team__card">
-                <img class="team__imag" src="./images/img1.jpg" alt="фото" width="270" />
+                <picture>
+                  <source
+                  srcset="
+              ./images/team/crew1.jpg  1x,
+              ../images/team/crew1-2x.jpg 2x"
+
+              media="(min-width: 1200px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew1-tab.jpg  1x,
+              ../images/team/crew1-tab-2x.jpg 2x"
+
+              media="(min-width: 768px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew1-mob.jpg  1x,
+              ../images/team/crew1-mob-2x.jpg 2x"
+
+              media="(max-width: 767px)"
+                  >
+                   <img class="team__imag" 
+                src="./images/team/crew1-mob.jpg" alt="фото" width="450" />
+                </picture>
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="team__prof" lang="en">Product Designer</p>
                 <ul class="soc list">
@@ -192,7 +238,31 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-                <img class="team__imag" src="./images/img2.jpg" alt="фото" width="270" />
+                <picture>
+                  <source
+                  srcset="
+              ./images/team/crew2.jpg  1x,
+              ../images/team/crew2-2x.jpg 2x"
+
+              media="(min-width: 1200px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew2-tab.jpg  1x,
+              ../images/team/crew2-tab-2x.jpg 2x"
+
+              media="(min-width: 768px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew2-mob.jpg  1x,
+              ../images/team/crew2-mob-2x.jpg 2x"
+
+              media="(max-width: 767px)"
+                  >
+                   <img class="team__imag" 
+                src="./images/team/crew2-mob.jpg" alt="фото" width="450" />
+                </picture>
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p class="team__prof" lang="en">Frontend Developer</p>
                 <ul class="soc list">
@@ -233,7 +303,31 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-                <img class="team__imag" src="./images/img3.jpg" alt="фото" width="270" />
+                <picture>
+                  <source
+                  srcset="
+              ./images/team/crew3.jpg  1x,
+              ../images/team/crew3-2x.jpg 2x"
+
+              media="(min-width: 1200px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew3-tab.jpg  1x,
+              ../images/team/crew3-tab-2x.jpg 2x"
+
+              media="(min-width: 768px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew3-mob.jpg  1x,
+              ../images/team/crew3-mob-2x.jpg 2x"
+
+              media="(max-width: 767px)"
+                  >
+                   <img class="team__imag" 
+                src="./images/team/crew3-mob.jpg" alt="фото" width="450" />
+                </picture>
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p class="team__prof" lang="en">Marketing</p>
                 <ul class="soc list">
@@ -274,7 +368,31 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-                <img class="team__imag" src="./images/img4.jpg" alt="фото" width="270" />
+                <picture>
+                  <source
+                  srcset="
+              ./images/team/crew4.jpg  1x,
+              ../images/team/crew4-2x.jpg 2x"
+
+              media="(min-width: 1200px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew4-tab.jpg  1x,
+              ../images/team/crew4-tab-2x.jpg 2x"
+
+              media="(min-width: 768px)"
+                  >
+                   <source
+                  srcset="
+              ./images/team/crew4-mob.jpg  1x,
+              ../images/team/crew4-mob-2x.jpg 2x"
+
+              media="(max-width: 767px)"
+                  >
+                   <img class="team__imag" 
+                src="./images/team/crew4-mob.jpg" alt="фото" width="450" />
+                </picture>
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p class="team__prof" lang="en">UI Designer</p>
                 <ul class="soc list">
@@ -509,6 +627,44 @@
       </div>
     </div>
     </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          width="24"
+          height="24"
+        >  <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+              </svg>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="" class="link">Студія</a></li>
+        <li class="mobile-menu__item"><a href="" class="link">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a href="" class="link">Контакти</a></li>
+      </ul>
+    <ul class="mobile-contacts list">
+        <li class="mobile-contacts__tel">
+            <a  href="tel:+380961111111"> +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-contacts__email">
+            <a  href="mailto:info@devstudio.com"> info@devstudio.com
+            </a>
+          </li>
+      </ul>
+      <ul class="mobile-soc list">
+        <li class="mobile-soc__item">Instagram</li>
+        <li class="mobile-soc__item">Twitter</li>
+        <li class="mobile-soc__item">Facebook</li>
+        <li class="mobile-soc__item">LinkedIn</li>
+      </ul>
+    </div>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

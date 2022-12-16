@@ -2,12 +2,16 @@
   border-top: 1px solid #ececec;
   display: flex;
   align-items: center;
+  
 
 }
 
-
+.nav__burger {
+  margin-left: auto;
+}
 
 .main-nav {
+
   display: flex;
   align-items: center;
   &__list {
@@ -52,7 +56,10 @@ content: "";
     opacity: 0;
     }
   }
-
+.nav__burger {
+    position: absolute;
+    right: 180%;
+}
 
 
 }
