@@ -35,6 +35,11 @@
     line-height: 1.14;
     line-height: 1.71;
     text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    }
+
   }
 
   &__desc {

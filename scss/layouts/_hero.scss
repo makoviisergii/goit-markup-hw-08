@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 0px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -62,7 +62,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/background-tab-2x.jpg);
+        url(../images/background-2x.jpg);
     }
   }
 
@@ -78,6 +78,8 @@
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
+      width: 700px;
+      margin: 0 auto;
     }
   }
 }
@@ -97,10 +99,10 @@
   text-align: center;
   letter-spacing: 0.06em;
 
+  border: none;
+
   border-radius: 4px;
   padding: 10px 32px;
-
-  border-color: var(--accent-text-color);
 
   transition-property: color, fill, background-color, border-color;
   transition: var(--timing-function);

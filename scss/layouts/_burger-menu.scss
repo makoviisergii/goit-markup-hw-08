@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
 
-    padding-right: 50px;
+    padding: 0px;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -64,13 +64,13 @@
 .menu-container .menu-toggle {
     position: absolute;
     top: 16px;
-    right: 30px;
+    right: 15px;
     color: #fff;
 }
 
 .mobile-menu {
     padding: 0;
-    margin-bottom: 300px;
+    margin-bottom: 75px;
     list-style: none;
 
     &__item>a {
@@ -83,9 +83,12 @@
     
             color: #212121;
             text-decoration: none;
-    
-   
-}
+    }
+
+    &__item:first-child a{
+        color: var(--accent-text-color);
+    }
+
 }
 
 .mobile-menu__item a:hover {
