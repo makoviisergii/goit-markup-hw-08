@@ -1140,17 +1140,15 @@ footer {
   border: none;
   fill: #000;
 }
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--accent-text-color);
+}
 
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: var(--accent-text-color);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -1172,7 +1170,7 @@ footer {
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 30px;
   color: #fff;
 }
 
@@ -1191,8 +1189,9 @@ footer {
   color: #212121;
   text-decoration: none;
 }
-.mobile-menu__item > a:hover {
-  color: var(--accent-text-color);
+
+.mobile-menu__item a:hover {
+  color: #2196F3;
 }
 
 .mobile-contacts__tel > a {

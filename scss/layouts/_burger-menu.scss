@@ -28,6 +28,11 @@
     cursor: pointer;
     border: none;
     fill: #000;
+
+    &:hover, 
+    &:focus {
+        fill: var(--accent-text-color);
+    }
   
 }
 
@@ -35,11 +40,6 @@
     .menu-toggle {
         display: none;
     }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-    fill: var(--accent-text-color);
 }
 
 .menu-container {
@@ -64,7 +64,7 @@
 .menu-container .menu-toggle {
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 30px;
     color: #fff;
 }
 
@@ -72,6 +72,7 @@
     padding: 0;
     margin-bottom: 300px;
     list-style: none;
+
     &__item>a {
             display: block;
             padding-bottom: 35px;
@@ -83,11 +84,14 @@
             color: #212121;
             text-decoration: none;
     
-            &:hover {
-                color: var(--accent-text-color);
+   
 }
 }
+
+.mobile-menu__item a:hover {
+    color: #2196F3;
 }
+
 .mobile-contacts {
     &__tel>a {
         display: block;
