@@ -536,12 +536,13 @@ footer {
 
 .claents {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .claents__item {
-  width: calc((100% - 30px) / 2);
+  width: 100%;
+  height: 92px;
 }
 .claents__link {
   border: 1px solid #afb1b8;
