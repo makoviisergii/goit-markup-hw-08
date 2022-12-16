@@ -28,7 +28,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
-    width: 768px;
+    width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -49,7 +49,7 @@
   @media screen and (min-width: 1200px) {
     height: 600px;
     padding: 200px 450px;
-    width: 1600px;
+    width:100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)

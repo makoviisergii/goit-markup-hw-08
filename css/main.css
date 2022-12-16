@@ -317,7 +317,7 @@ footer {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 204px;
-    width: 768px;
+    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-tab.jpg);
   }
 }
@@ -330,7 +330,7 @@ footer {
   .hero {
     height: 600px;
     padding: 200px 450px;
-    width: 1600px;
+    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   }
 }
