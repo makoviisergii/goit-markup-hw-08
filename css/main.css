@@ -1211,9 +1211,15 @@ footer {
   color: #fff;
 }
 
+.burger-box {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .mobile-menu {
   padding: 0;
-  margin-bottom: 75px;
   list-style: none;
 }
 .mobile-menu__item > a {
@@ -1250,15 +1256,16 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-bottom: 65px;
 }
 
 .mobile-soc {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .mobile-soc__item {
   padding: 0 10px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
